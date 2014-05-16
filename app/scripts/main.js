@@ -1,13 +1,12 @@
 'use strict';
 
 $(function(){
+    var speed = 10;
     var isScrolling = false;
     var timer;
-    var s = 0;
 
     function startTimer() {
-        var speed = 10;
-
+        var s = $(window).scrollTop();
         timer = setInterval(function(){
             s += speed;
             $('html, body').animate({scrollTop: s}, 100);
