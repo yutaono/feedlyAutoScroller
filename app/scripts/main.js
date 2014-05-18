@@ -1,7 +1,7 @@
 'use strict';
 
 $(function(){
-    var speed = 10;
+    var speed = 6;
     var isScrolling = false;
     var timer;
 
@@ -18,7 +18,7 @@ $(function(){
     }
 
     $('body').on('keyup', function(e){
-        if (e.keyCode !== 76) {  // 76はLの文字コード
+        if (e.keyCode !== 73) { // 73はiの文字コード
             return;
         }
 
